@@ -1,0 +1,160 @@
+/* General Resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, h1, h2, p, ul, li, form, label, input, select, textarea {
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    /* Gradient background for the entire website */
+    background: linear-gradient(to bottom, #3498db, #e74c3c); /* Blue to Red Gradient */
+    color: #2c3e50; /* Dark Blue for text */
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff; /* White for links to contrast against the gradient */
+}
+
+a:hover {
+    color: #f0e4d7; /* Soft beige on hover */
+}
+
+/* Container Styles */
+header, nav, main, footer {
+    max-width: 1100px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white to show a bit of the gradient background */
+    border-radius: 5px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+header h1, footer p {
+    text-align: center;
+    color: #34495e; /* Dark Blue for headers */
+}
+
+/* Navigation Styles */
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(46, 204, 113, 0.8); /* Semi-transparent Fresh Green for navbar */
+    border-radius: 5px;
+}
+
+nav ul li {
+    flex-grow: 1;
+    text-align: center;
+    border-left: 1px solid #27ae60; /* Slightly Darker Green for border */
+}
+
+nav ul li:first-child {
+    border-left: none;
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px;
+    color: #ffffff; /* White text color for nav items */
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: rgba(39, 174, 96, 0.8); /* Semi-transparent Darker Green on hover for nav items */
+}
+
+/* Form Styles */
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #2c3e50; /* Dark Blue for labels */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #e74c3c; /* Red border for input fields */
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #fefefe; /* Almost White background for input fields */
+}
+
+input[type="submit"] {
+    display: inline-block;
+    background-color: #e74c3c; /* Red background for buttons */
+    color: #ffffff; /* White text for buttons */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #c0392b; /* Darker Red on hover for buttons */
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table, th, td {
+    border: 1px solid #2ecc71; /* Green border for tables */
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #ecf0f1; /* Soft Gray for table headers */
+    color: #34495e; /* Dark Blue for header text */
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #f9f9f9; /* Light Gray for alternate rows */
+}
+
+/* Testimonials */
+blockquote {
+    border-left: 5px solid #2ecc71; /* Green left border for quotes */
+    padding-left: 10px;
+    margin-bottom: 20px;
+    background-color: #ecf0f1; /* Soft Gray background for testimonials */
+    border-radius: 5px;
+}
+
+blockquote footer {
+    font-size: 0.9em;
+    margin-top: 10px;
+    text-align: right;
+    color: #7f8c8d; /* Gray for author names */
+}
+
+/* Footer Styles */
+footer {
+    margin-top: 20px;
+    background-color: rgba(52, 73, 94, 0.9); /* Semi-transparent Dark Blue background for footer */
+    color: #ffffff; /* White text for footer */
+    text-align: center;
+    padding: 10px 0;
+    border-top: 5px solid #2ecc71; /* Green top border */
+}

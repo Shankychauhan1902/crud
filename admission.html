@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admissions - IMS Noida</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Admission Process at IMS Noida</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./course.html">Courses</a></li>
+            <li><a href="./admission.html">Admissions</a></li>
+            <li><a href="./student.html">Students</a></li>
+            <li><a href="./faculty.html">Faculty</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Admission Criteria</h2>
+            <ul>
+                <li>
+                    <h3>BCA:</h3>
+                    <p>10+2 or equivalent with a minimum of 50% marks. Preference to students with a computer background.</p>
+                </li>
+                <li>
+                    <h3>BBA:</h3>
+                    <p>10+2 or equivalent in any stream with a minimum of 50% marks. An entrance exam may be required.</p>
+                </li>
+                <li>
+                    <h3>LLB:</h3>
+                    <p>Graduation in any stream with a minimum of 45% marks. Entrance test and interview will be conducted.</p>
+                </li>
+                <li>
+                    <h3>BAJMC:</h3>
+                    <p>10+2 or equivalent with at least 50% marks. An aptitude for media and communications is a plus.</p>
+                </li>
+                <li>
+                    <h3>MCA:</h3>
+                    <p>Bachelor's degree with Mathematics at 10+2 level or at graduation level, with a minimum of 50% aggregate marks.</p>
+                </li>
+                <li>
+                    <h3>MAJMC:</h3>
+                    <p>Graduation in any stream with a minimum of 50% marks. Prior experience in media or journalism can be beneficial.</p>
+                </li>
+                <li>
+                    <h3>BALLB:</h3>
+                    <p>10+2 or equivalent with a minimum of 45% marks. Entrance examination score and interview performance will be considered.</p>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Application Form</h2>
+            <form id="admissionForm">
+                <label for="applicantName">Full Name:</label>
+                <input type="text" id="applicantName" name="applicantName" required><br>
+
+                <label for="applicantEmail">Email:</label>
+                <input type="email" id="applicantEmail" name="applicantEmail" required><br>
+
+                <label for="chosenCourse">Preferred Course:</label>
+                <select id="chosenCourse" name="chosenCourse">
+                    <option value="BCA">BCA</option>
+                    <option value="BBA">BBA</option>
+                    <option value="LLB">LLB</option>
+                    <option value="BAJMC">BAJMC</option>
+                    <option value="MCA">MCA</option>
+                    <option value="MAJMC">MAJMC</option>
+                    <option value="BALLB">BALLB</option>
+                </select><br>
+
+                <label for="reason">Why choose IMS Noida?</label><br>
+                <textarea id="reason" name="reason" rows="4" cols="50" required></textarea><br>
+
+                <input type="submit" value="Apply">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 IMS Noida</p>
+    </footer>
+
+    <script src="./admission.js"></script>
+</body>
+
+</html>

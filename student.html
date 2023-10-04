@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management - IMS Noida</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Student Management</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./course.html">Courses</a></li>
+            <li><a href="./admission.html">Admissions</a></li>
+            <li><a href="./student.html">Students</a></li>
+            <li><a href="./faculty.html">Faculty</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Add New Student</h2>
+            <form id="studentForm">
+                <label for="studentName">Full Name:</label>
+                <input type="text" id="studentName" name="studentName" required><br>
+
+                <label for="studentRollNo">Roll Number:</label>
+                <input type="text" id="studentRollNo" name="studentRollNo" required><br>
+
+                <label for="studentCourse">Course:</label>
+                <select id="studentCourse" name="studentCourse">
+                    <option value="BCA">BCA</option>
+                    <option value="BBA">BBA</option>
+                    <option value="LLB">LLB</option>
+                    <option value="BAJMC">BAJMC</option>
+                    <option value="MCA">MCA</option>
+                    <option value="MAJMC">MAJMC</option>
+                    <option value="BALLB">BALLB</option>
+                </select><br>
+
+                <label for="studentYear">Year:</label>
+                <select id="studentYear" name="studentYear">
+                    <option value="1">1st</option>
+                    <option value="2">2nd</option>
+                    <option value="3">3rd</option>
+                    <!-- Add more years if required -->
+                </select><br>
+
+                <label for="studentSemester">Semester:</label>
+                <select id="studentSemester" name="studentSemester">
+                    <option value="1">1st</option>
+                    <option value="2">2nd</option>
+                    <!-- Add more semesters if required -->
+                </select><br>
+
+                <input type="submit" value="Add Student">
+            </form>
+        </section>
+
+        <section>
+            <h2>Student List</h2>
+            <table id="studentTable">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Roll Number</th>
+                        <th>Course</th>
+                        <th>Year</th>
+                        <th>Semester</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Dynamic table rows for students will be inserted here -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 IMS Noida</p>
+    </footer>
+
+    <script src="./student.js"></script>
+</body>
+
+</html>
